@@ -1,10 +1,10 @@
+//Soumik Bhattacharyya, Roll No.-1811155
 //include library
 #include<iostream>
 using namespace std;
 
 //declare the main function
 int main()
-
 	{
 
 //declare variables
