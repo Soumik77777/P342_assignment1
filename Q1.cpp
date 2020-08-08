@@ -1,26 +1,43 @@
 //Soumik Bhattacharyya, Roll No.-1811155
-//include library
+
+//Q1. Add 1+2+3+... without using the formula n(n+1)/2
+
+//including library
 #include<iostream>
 using namespace std;
 
-//declare the main function
+//declaring the main function
 int main()
+
 	{
 
 //declare variables
-	int sum=0;
-	int i=1;
+	int n, sum=0;
 
-//program to print the sum of all numbers from 1 to 100
+	cout << "Please enter a positive integer"<< endl;
+	cin>>n;
 
-//looping
+    int i=1;
+    
+//trapping negative entries
+    if (n<0)
+    {
+    cout << "You've entered a negative number. Please insert a valid input." << endl;
+    
+    return 0;
+    }
+    
+    
+    else
+    
+//program to sum over 1 to n
 
-	while(i<=100)
+    	while(i<=n)
 		{
 			sum=sum+i;
 			i++;
 		}
-		cout<<"The summation of all natural numbers from 1 to 100 are "<<sum<<endl;
+		cout<<"The summation equals to "<<sum<<endl;
 
 return 0;
 	}
