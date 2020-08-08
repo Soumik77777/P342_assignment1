@@ -1,22 +1,25 @@
 //Soumik Bhattacharyya, Roll No.-1811155
-//include library
+
+//Q2. Find n! say for 10 or 15. Check and trap negative integers.
+
+//including library
 #include<iostream>
 using namespace std;
 
-//declare the main function
+//declaring the main function
 int main()
 
 	{
 
 //declare variables
-	int n, product;
+	double n, product;
 
-	cout << "Please input a natural number"<< endl;
+	cout << "Please enter a positive integer"<< endl;
 	cin>>n;
 
     product=n;
     
-//checking if it's a positive number 
+//trapping negative entries
     if (n<0)
     {
     cout << "You've entered a negative number. Please insert a valid input." << endl;
@@ -34,7 +37,7 @@ int main()
 		        n--;
 	    		product=product*n;
 	    	}
-		cout<<"The value of n! equals to "<<product<<endl;
+		cout<<"The factorial value equals to "<<product<<endl;
 
 return 0;
 	}
